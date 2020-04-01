@@ -1,2 +1,3 @@
 # About
-Personal Info Page
+Personal Info Page to Introduce Myself
+Bootstrap / HTML5
