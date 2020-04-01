@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Customize stylesheet -->
+  <link rel="stylesheet" href="./styles/style.css" type="text/css" media="screen">
+  <title>About Me</title>
+
+</head>
+
+<body>
+  <header id="top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-lg-flex" id="page-nav">
+      <a class="navbar-brand d-lg-flex" href="#top">
+        <span class="d-block d-lg-none"> About ME </span>
+        <span class="d-none d-lg-block">
+          <img src="imgs/avatar.jpg" alt="avatar" class="rounded-circle" id="avatar" , width="150px">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-lg-flex" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#page-home">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#page-skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#page-education">Education</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#page-interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#page-contact">Contace Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="p-5 p-lg-5 d-flex align-items-center" id="page-home">
+      <div>
+        <h1>
+          <span style="color: #e76f51;">Ingram</span>
+          <span style="color: #264652;">HE</span>
+        </h1>
+        <h3>
+          Welcome to this personal info page.
+        </h3>
+        <em>This is a demo page for introducing myself.</em><br />
+        <!-- <em>However, the information in this page may be not all true.</em> -->
+      </div>
+    </section>
+    <hr>
+    <section id="page-skills" class="p-5 p-lg-5 align-items-center d-flex">
+      <div>
+        <ul class="list-group-flush">
+          <li class="list-group-item"><span class="emph">Experience</span> in Python
+            <img src="./imgs/python.svg" alt="python"> <br> &nbsp;&nbsp;Flask, Django and Automaion scripts
+          </li>
+          <li class="list-group-item">
+            <span class="emph">Familiar</span> with Golang <img src="./imgs/golang.svg" alt="golang"> and Rust <img src="./imgs/rust.svg" alt="rust">
+          </li>
+          <li class="list-group-item">
+            <span class="emph">Basic</span> in Webpage Design - HTML <img src="./imgs/html.svg" alt="html">, CSS <img src="./imgs/css.svg" alt="css">, JavaScript <img src="./imgs/js.svg" alt="JavaScript">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="p-5 p-lg-5 d-flex align-items-center" id="page-education">
+      <div class="table-responsive">
+        <table class="table w-100 table-striped table-bordered table-hover ">
+          <thead class="thead">
+            <tr>
+              <th scope="col">When</th>
+              <th scope="col">Where</th>
+              <th scope="col">What</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">2013~2019</th>
+              <th scope="row"><img src="./imgs/hogwarts.png" alt="Hogwarts" class="d-inline-block" style="height: 3em;"> Hogwarts School of Witchcraft and Wizardry </th>
+              <th scope="row">Major in Astronomy</th>
+            </tr>
+            <tr>
+              <th scope="row"> 2019~Current </th>
+              <th scope="row"><img src="./imgs/polyu.ico" alt="PolyU" class="d-inline-block" style="height: 3em;"> The Hong Kong Polytechnic University </th>
+              <th scope="row">Electronic Information Engineering</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <hr>
+    <section id="page-interests" class="p-5 p-lg-5 d-flex align-items-center">
+      <div class="container-fluid">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <p class="h4" style="color: #1d1d33;font-weight: 600;">Album:</p>
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe src="https://open.spotify.com/embed/album/2XF4GhKOvsWt1viozHlx8a" class="embed-responsive-item"
+              frameborder="0" allowtransparency="true" allow="encrypted-media">
+            </iframe>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-12 col-xs-12">
+          <p class="h4" style="color: #1d1d33;font-weight: 600;">Film:</p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/NoAzpa1x7jU"
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="page-contact" class="p-5 p-lg-5 d-flex align-items-center">
+      <a class="p-sm-5 p-md-5 p-5 p-lg-5" href="https://github.com/IngramHE"><img src="./imgs/github-mark.png" alt="github"></a>
+      <a class="p-sm-5 p-md-5 p-5 p-lg-5" href="mailto:ingram.he@connect.polyu.hk">
+        <img src="./imgs/email.svg" alt="email">
+      </a>
+      <a class="p-sm-5 p-md-5 p-5 p-lg-5" href="https://t.me/haxllx">
+        <img src="./imgs/telegram.svg" alt="telegram">
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Customize script -->
+    <script src="./scripts/main.js"></script>
+  </footer>
+
+</body>
+
+</html>
