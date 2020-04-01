@@ -1,0 +1,127 @@
+body {
+  scroll-behavior: smooth!important;
+  font-family: Verdana, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#top {
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+#page-nav .navbar-nav .nav-item .nav-link {
+  font-size: larger;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+#page-nav .navbar-toggler:focus {
+  outline-color: #ffffff;
+}
+
+main {
+  /* background-color: rgba(238, 252, 250, 0.5); */
+  background-color: whitesmoke;
+  /* background-color: #43606c; */
+  width: 100%;
+  padding: 10px 30px;
+}
+
+nav.bg-dark {
+  /* background-color: #264653 !important; */
+  background-color: #ef484c!important;
+}
+
+main section {
+  min-height: 100vh;
+  max-width: 100rem;
+}
+
+main section#page-home h1 {
+  font-weight: 800;
+  font-size: 5rem;
+}
+
+main section div {
+  max-width: 100vw;
+}
+
+#page-nav .item-active {
+  color: black !important;
+  background-color: whitesmoke;
+}
+
+main section#page-skills {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+main section ul li img {
+  width: 2.2rem;
+}
+main section .emph {
+  color: rgb(255, 117, 49);
+  font-weight: 600;
+}
+
+a:hover,
+a:focus {
+  color: #4d4fa3 !important;
+}
+
+a:active {
+  color: black !important;
+}
+
+
+
+#page-contact a img {
+  height: 3rem;
+  vertical-align: text-bottom;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 240px;
+  }
+
+  #page-nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 240px;
+    height: 100%;
+  }
+
+  #page-nav .navbar-brand {
+    margin: auto auto 0;
+  }
+
+  #page-nav .navbar-brand #avatar {
+    border: 5px dotted rgba(255, 255, 255, 0.5);
+  }
+
+  #page-nav .navbar-collapse {
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+
+  #page-nav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #page-nav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+
+  #page-nav .nav-item:active {
+    background-color: whitesmoke;
+  }
+
+  #page-nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
