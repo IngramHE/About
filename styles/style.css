@@ -1,6 +1,7 @@
 body {
-  scroll-behavior: smooth!important;
+  scroll-behavior: smooth !important;
   font-family: Verdana, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100vw !important;
 }
 
 #top {
@@ -19,26 +20,23 @@ body {
 }
 
 main {
-  /* background-color: rgba(238, 252, 250, 0.5); */
   background-color: whitesmoke;
-  /* background-color: #43606c; */
-  width: 100%;
+  max-width: 100vw;
   padding: 10px 30px;
 }
 
 nav.bg-dark {
-  /* background-color: #264653 !important; */
-  background-color: #ef484c!important;
+  background-color: #ef484c !important;
 }
 
 main section {
   min-height: 100vh;
-  max-width: 100rem;
+  max-width: 80rem;
 }
 
 main section#page-home h1 {
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 15vw;
 }
 
 main section div {
@@ -50,6 +48,11 @@ main section div {
   background-color: whitesmoke;
 }
 
+#page-contact a img {
+  height: 3rem;
+  vertical-align: text-bottom;
+}
+
 main section#page-skills {
   font-size: 1.6rem;
   font-weight: 500;
@@ -58,6 +61,7 @@ main section#page-skills {
 main section ul li img {
   width: 2.2rem;
 }
+
 main section .emph {
   color: rgb(255, 117, 49);
   font-weight: 600;
@@ -72,16 +76,10 @@ a:active {
   color: black !important;
 }
 
-
-
-#page-contact a img {
-  height: 3rem;
-  vertical-align: text-bottom;
-}
 @media (min-width: 992px) {
   body {
-    padding-top: 0;
-    padding-left: 240px;
+    padding: 0;
+    margin-left: 240px;
   }
 
   #page-nav {
@@ -90,8 +88,9 @@ a:active {
     top: 0;
     left: 0;
     flex-direction: column;
-    width: 240px;
+    max-width: 280px;
     height: 100%;
+    padding: 1.5rem;
   }
 
   #page-nav .navbar-brand {
@@ -124,4 +123,25 @@ a:active {
   #page-nav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
+}
+
+@media (min-width: 768px) {
+  main section#page-home h1 {
+    font-size: 7rem;
+  }
+}
+
+#page-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  z-index: 1010;
+}
+
+body .navbar-nav{
+	margin-right: 0px;
+	margin-left: 0px;
 }
